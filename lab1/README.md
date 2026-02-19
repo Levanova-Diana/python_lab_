@@ -38,7 +38,7 @@ distances['Paris'] = {
 print(distances)
 ````
 # Скриншот работы программы:
-![img.png](img.png)
+![img.png](img_8.png)
 
 # Задание 2
 ## Описание задачи
@@ -321,3 +321,275 @@ print(decoded_message)
 ````
 ## Скриншот работы программы:
 ![img_7.png](img_7.png)
+
+# Задание 9
+## Описание задачи:
+### В саду сорвали цветы:
+```` python 
+garden = ('ромашка', 'роза', 'одуванчик', 'ромашка', 'гладиолус', 'подсолнух', 'роза', )
+````
+#### На лугу сорвали цветы:
+```` python
+meadow = ('клевер', 'одуванчик', 'ромашка', 'клевер', 'мак', 'одуванчик', 'ромашка', )
+````
+#### Создать множество цветов, произрастающих в саду и на лугу:
+```` python
+garden_set =
+meadow_set =
+````
+#### Вывести на консоль все виды цветов; те, которые растут и там и там;
+#### те, которые растут в саду, но не растут на лугу; те, которые растут на лугу, но не растут в саду
+
+## Решение:
+```` python
+garden = ('ромашка', 'роза', 'одуванчик', 'ромашка', 'гладиолус', 'подсолнух', 'роза', )
+meadow = ('клевер', 'одуванчик', 'ромашка', 'клевер', 'мак', 'одуванчик', 'ромашка', )
+
+garden_set = set(garden)
+meadow_set = set(meadow)
+
+all_flowers = garden_set | meadow_set #объединение
+print('Все виды цветов:', all_flowers)
+
+everywhere = garden_set & meadow_set #пересечение
+print('Цветы, которые растут и в саду, и на лугу:', everywhere)
+
+only_garden = garden_set - meadow_set
+print('Цветы, которые растут в саду, но не растут на лугу', only_garden)
+
+only_meadow = meadow_set - garden_set
+print('Цветы, которые растут на лугу, но не растут в саду', only_meadow)
+````
+
+## Скриншот выполнения программы:
+![img.png](img_8.png)
+
+# Задание 10
+## Описание задачи:
+### Есть словарь магазинов с распродажами:
+```` python
+shops = {
+    'ашан':
+        [
+            {'name': 'печенье', 'price': 10.99},
+            {'name': 'конфеты', 'price': 34.99},
+            {'name': 'карамель', 'price': 45.99},
+            {'name': 'пирожное', 'price': 67.99}
+        ],
+    'пятерочка':
+        [
+            {'name': 'печенье', 'price': 9.99},
+            {'name': 'конфеты', 'price': 32.99},
+            {'name': 'карамель', 'price': 46.99},
+            {'name': 'пирожное', 'price': 59.99}
+        ],
+    'магнит':
+        [
+            {'name': 'печенье', 'price': 11.99},
+            {'name': 'конфеты', 'price': 30.99},
+            {'name': 'карамель', 'price': 41.99},
+            {'name': 'пирожное', 'price': 62.99}
+        ],
+}
+````
+### Создать словарь цен на продукты следующего вида (писать прямо в коде):
+```` python
+sweets = {
+    'название сладости': [
+        {'shop': 'название магазина', 'price': 99.99},
+        # TODO тут с клавиатуры введите магазины и цены (можно копипастить ;))
+    ],
+    # TODO тут с клавиатуры введите другую сладость и далее словарь магазинов
+}
+````
+## Указать надо только по 2 магазина с минимальными ценами
+
+## Рещение:
+```` python
+shops = {
+    'ашан':
+        [
+            {'name': 'печенье', 'price': 10.99},
+            {'name': 'конфеты', 'price': 34.99},
+            {'name': 'карамель', 'price': 45.99},
+            {'name': 'пирожное', 'price': 67.99}
+        ],
+    'пятерочка':
+        [
+            {'name': 'печенье', 'price': 9.99},
+            {'name': 'конфеты', 'price': 32.99},
+            {'name': 'карамель', 'price': 46.99},
+            {'name': 'пирожное', 'price': 59.99}
+        ],
+    'магнит':
+        [
+            {'name': 'печенье', 'price': 11.99},
+            {'name': 'конфеты', 'price': 30.99},
+            {'name': 'карамель', 'price': 41.99},
+            {'name': 'пирожное', 'price': 62.99}
+        ],
+}
+
+sweets = {
+    'печенье': [
+        {'shop': 'пятерочка', 'price': 9.99},
+        {'shop': 'ашан', 'price': 10.99}
+    ],
+    'конфеты': [
+        {'shop': 'магнит', 'price': 30.99},
+        {'shop': 'пятерочка', 'price': 32.99}
+    ],
+    'карамель': [
+        {'shop': 'магнит', 'price': 41.99},
+        {'shop': 'ашан', 'price': 45.99}
+    ],
+    'пирожное': [
+        {'shop': 'пятерочка', 'price': 59.99},
+        {'shop': 'магнит', 'price': 62.99}
+    ],
+}
+print(sweets)
+````
+
+## Скриншот работы программы:
+![img.png](img_10.png)
+
+# Задание 11
+## Описание задачи:
+### Есть словарь кодов товаров
+```` python
+goods = {
+    'Лампа': '12345',
+    'Стол': '23456',
+    'Диван': '34567',
+    'Стул': '45678',
+}
+````
+### Есть словарь списков количества товаров на складе.
+```` python
+store = {
+    '12345': [
+        {'quantity': 27, 'price': 42},
+    ],
+    '23456': [
+        {'quantity': 22, 'price': 510},
+        {'quantity': 32, 'price': 520},
+    ],
+    '34567': [
+        {'quantity': 2, 'price': 1200},
+        {'quantity': 1, 'price': 1150},
+    ],
+    '45678': [
+        {'quantity': 50, 'price': 100},
+        {'quantity': 12, 'price': 95},
+        {'quantity': 43, 'price': 97},
+    ],
+}
+````
+### Рассчитать на какую сумму лежит каждого товара на складе
+#### например для ламп:
+```` python
+lamps_cost = store[goods['Лампа']][0]['quantity'] * store[goods['Лампа']][0]['price']
+# или проще (/сложнее ?)
+lamp_code = goods['Лампа']
+lamps_item = store[lamp_code][0]
+lamps_quantity = lamps_item['quantity']
+lamps_price = lamps_item['price']
+lamps_cost = lamps_quantity * lamps_price
+print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
+````
+### Вывести стоимость каждого вида товара на складе:
+#### один раз распечать сколько всего столов и их общая стоимость,
+#### один раз распечать сколько всего стульев и их общая стоимость,
+####   и т.д. на складе
+### Формат строки <товар> - <кол-во> шт, стоимость <общая стоимость> руб
+### Нельзя использовать циклы
+
+## Решение:
+```` python
+goods = {
+    'Лампа': '12345',
+    'Стол': '23456',
+    'Диван': '34567',
+    'Стул': '45678',
+}
+store = {
+    '12345': [
+        {'quantity': 27, 'price': 42},
+    ],
+    '23456': [
+        {'quantity': 22, 'price': 510},
+        {'quantity': 32, 'price': 520},
+    ],
+    '34567': [
+        {'quantity': 2, 'price': 1200},
+        {'quantity': 1, 'price': 1150},
+    ],
+    '45678': [
+        {'quantity': 50, 'price': 100},
+        {'quantity': 12, 'price': 95},
+        {'quantity': 43, 'price': 97},
+    ],
+}
+lamp_code = goods['Лампа']
+lamps_item = store[lamp_code][0]
+lamps_quantity = lamps_item['quantity']
+lamps_price = lamps_item['price']
+lamps_cost = lamps_quantity * lamps_price
+print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
+
+
+table_code = goods['Стол']
+table_quantity_1 = store[table_code][0]['quantity']
+table_price_1 = store[table_code][0]['price']
+table_cost_1 = table_quantity_1 * table_price_1
+
+table_quantity_2 = store[table_code][1]['quantity']
+table_price_2 = store[table_code][1]['price']
+table_cost_2 = table_quantity_2 * table_price_2
+
+table_quantity_total = table_quantity_1 + table_quantity_2
+table_cost_total = table_cost_1 + table_cost_2
+print(f'Стол - {table_quantity_total} шт, стоимость {table_cost_total} руб')
+
+
+divan_code = goods['Диван']
+divan_quantity_1 = store[divan_code][0]['quantity']
+divan_price_1 = store[divan_code][0]['price']
+divan_cost_1 = divan_quantity_1 * divan_price_1
+
+divan_quantity_2 = store[divan_code][1]['quantity']
+divan_price_2 = store[divan_code][1]['price']
+divan_cost_2 = divan_quantity_2 * divan_price_2
+
+divan_quantity_total = divan_quantity_1 + divan_quantity_2
+divan_cost_total = divan_cost_1 + divan_cost_2
+print(f'Диван - {divan_quantity_total} шт, стоимость {divan_cost_total} руб')
+
+
+chair_code = goods['Стул']
+chair_quantity_1 = store[chair_code][0]['quantity']
+chair_price_1 = store[chair_code][0]['price']
+chair_cost_1 = chair_quantity_1 * chair_price_1
+
+chair_quantity_2 = store[chair_code][1]['quantity']
+chair_price_2 = store[chair_code][1]['price']
+chair_cost_2 = chair_quantity_2 * chair_price_2
+
+chair_quantity_3 = store[chair_code][2]['quantity']
+chair_price_3 = store[chair_code][2]['price']
+chair_cost_3 = chair_quantity_3 * chair_price_3
+
+chair_quantity_total = chair_quantity_1 + chair_quantity_2 + chair_quantity_3
+chair_cost_total = chair_cost_1 + chair_cost_2 + chair_cost_3
+print(f'Стул - {chair_quantity_total} шт, стоимость {chair_cost_total} руб')
+````
+
+## Скриншот выполнения программы:
+![img.png](img_11.png)
+
+# Список используемой литературы:
+https://evil-teacher.orbiter.website/prog_pm/lab01/
+
+https://docs.python.org/3/tutorial/
+https://docs.google.com/document/d/1r4uqIEtQFG6JAGAX5YYOj8DCA55aI4b3iXtJNrENweU/edit?tab=t.0#heading=h.c40rgxxylne
