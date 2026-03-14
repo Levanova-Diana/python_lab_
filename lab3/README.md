@@ -44,7 +44,7 @@ result = count_codes()
 print(result)
 ````
 # Результат выполнения программы:
-![img.png](img.png)
+![img.png](img/img.png)
 
 # Задача 2
 # Условие:
@@ -64,7 +64,7 @@ result = count()
 print(result)
 ````
 # Результат выполнения программы:
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 # Задача 3
 # Условие:
@@ -110,7 +110,7 @@ result = get_prime_numbers_with_orders(245690, 245756)
 print(result)
 ````
 # Результат выполнения программы:
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 # Список используемой литературы:
 1. [Itertools в Python - Хабр](https://habr.com/ru/companies/otus/articles/529356/)
