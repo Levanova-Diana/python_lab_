@@ -1,5 +1,5 @@
 import time
-def log_calls(func):
+def log_c(func):
     def wrapper(*args, **kwargs):
         current_time = time.strftime('%H:%M:%S')
         args_list = [str(arg) for arg in args]
@@ -14,10 +14,10 @@ def log_calls(func):
         print("-" * 40)
         return result
     return wrapper
-@log_calls
+@log_c
 def add(a, b):
     return a + b
-@log_calls
+@log_c
 def greet(name, msg="Привет"):
     return f"{msg}, {name}!"
 if __name__ == "__main__":

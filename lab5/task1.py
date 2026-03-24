@@ -5,9 +5,10 @@ file.write("Строка 3\n")
 file.write("Строка 4\n")
 file.close()
 def get_file_reader(filename):
-    file = open(filename, 'r', encoding='utf-8')
-    lines = file.readlines()
-    file.close()
+    f = open(filename, 'r', encoding='utf-8')
+    lines = f.readlines()
+    f.close()
+
     for i in range(len(lines)):
         lines[i] = lines[i].strip('\n')
     current = 0
@@ -19,6 +20,7 @@ def get_file_reader(filename):
             return line
         else:
             return None
+
     return read_next
 reader = get_file_reader("test.txt")
 print(reader()) # Строка 1

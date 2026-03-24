@@ -11,9 +11,10 @@ file.write("Строка 3\n")
 file.write("Строка 4\n")
 file.close()
 def get_file_reader(filename):
-    file = open(filename, 'r', encoding='utf-8')
-    lines = file.readlines()
-    file.close()
+    f = open(filename, 'r', encoding='utf-8')  
+    lines = f.readlines()
+    f.close()
+
     for i in range(len(lines)):
         lines[i] = lines[i].strip('\n')
     current = 0
@@ -25,6 +26,7 @@ def get_file_reader(filename):
             return line
         else:
             return None
+
     return read_next
 reader = get_file_reader("test.txt")
 print(reader()) # Строка 1
@@ -72,7 +74,7 @@ print(reader()) # None
 # Решение:
 ```` python
 import time
-def log_calls(func):
+def log_c(func):
     def wrapper(*args, **kwargs):
         current_time = time.strftime('%H:%M:%S')
         args_list = [str(arg) for arg in args]
@@ -87,10 +89,10 @@ def log_calls(func):
         print("-" * 40)
         return result
     return wrapper
-@log_calls
+@log_c
 def add(a, b):
     return a + b
-@log_calls
+@log_c
 def greet(name, msg="Привет"):
     return f"{msg}, {name}!"
 if __name__ == "__main__":
