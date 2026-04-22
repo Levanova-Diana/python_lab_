@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6d54c9c-402f-47ea-8cc7-596354d4ff3c" name="Changes" comment="lab6_commit" />
+    <list default="true" id="c6d54c9c-402f-47ea-8cc7-596354d4ff3c" name="Changes" comment="lab1_commit">
+      <change afterPath="$PROJECT_DIR$/.idea/python_lab_.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +57,7 @@
     "Python.08_garden.executor": "Run",
     "Python.09_shopping.executor": "Run",
     "Python.10_store.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.prime_num.executor": "Run",
     "Python.prog.executor": "Run",
     "Python.task1.executor": "Run",
@@ -66,20 +70,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/диана/PycharmProjects/python_lab_/lab1"
+    "last_opened_file_path": "C:/Users/диана/PycharmProjects/python_lab_/lab7/rare_package"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab7\rare_package" />
       <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab6\img" />
-      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab5\img" />
-      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab4\img" />
-      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab3\img" />
-      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab2\img" />
+      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab1\img" />
+      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab8\img" />
+      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab7\img" />
+      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab7" />
+      <recent name="C:\Users\диана\PycharmProjects\python_lab_\lab7\rare_package" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -201,17 +207,51 @@
       <option name="project" value="LOCAL" />
       <updated>1775053937966</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lab6_commit">
+      <option name="closed" value="true" />
+      <created>1775062019193</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1775062019194</updated>
+    </task>
+    <task id="LOCAL-00015" summary="lab7_commit">
+      <option name="closed" value="true" />
+      <created>1776442277543</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1776442277543</updated>
+    </task>
+    <task id="LOCAL-00016" summary="lab8_commit">
+      <option name="closed" value="true" />
+      <created>1776591834515</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1776591834515</updated>
+    </task>
+    <task id="LOCAL-00017" summary="lab1_commit">
+      <option name="closed" value="true" />
+      <created>1776846998190</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1776846998190</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lab1_commit" />
     <MESSAGE value="lab2_commit" />
     <MESSAGE value="lab3_commit" />
     <MESSAGE value="lab4_commit" />
     <MESSAGE value="lab5_commit" />
     <MESSAGE value="lab6_commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab6_commit" />
+    <MESSAGE value="lab7_commit" />
+    <MESSAGE value="lab8_commit" />
+    <MESSAGE value="lab1_commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab1_commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
