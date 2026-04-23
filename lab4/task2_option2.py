@@ -1,4 +1,4 @@
-def sequence_recursive(i):
+def sequence_iterative(i):
     if i == 1:
         return 0.3
     if i == 2:
@@ -12,8 +12,8 @@ def sequence_recursive(i):
         w_prev2 = w_prev1
         w_prev1 = w_current
     return w_current
-print(sequence_recursive(1))
-print(sequence_recursive(2))
-print(sequence_recursive(3))
-print(sequence_recursive(5))
-print(sequence_recursive(10))
+print(sequence_iterative(1))
+print(sequence_iterative(2))
+print(sequence_iterative(3))
+print(sequence_iterative(5))
+print(sequence_iterative(10))

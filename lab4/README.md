@@ -40,7 +40,7 @@ print(unpack_recursive(data))
 
 # Решение без рекурсии:
 ```` python
-def unpuck_interative(data):
+def unpuck_iterative(data):
     result = []
     stack = [data]
     while stack:
@@ -57,7 +57,7 @@ def unpuck_interative(data):
             result.append(current)
     return list(result)
 data = [None, [1, ({2, 3}, {'foo': 'bar'})]]
-print(unpuck_interative(data))
+print(unpuck_iterative(data))
 ````
 # Описание проделанной работы:
 1. В цикле while stack: (пока стек не пуст) выполняются следующие действия:
@@ -112,7 +112,7 @@ print(sequence_recursive(5))
 
 # Решение без рекурсии:
 ```` python
-def sequence_recursive(i):
+def sequence_iterative(i):
     if i == 1:
         return 0.3
     if i == 2:
@@ -126,11 +126,11 @@ def sequence_recursive(i):
         w_prev2 = w_prev1
         w_prev1 = w_current
     return w_current
-print(sequence_recursive(1))
-print(sequence_recursive(2))
-print(sequence_recursive(3))
-print(sequence_recursive(5))
-print(sequence_recursive(10))
+print(sequence_iterative(1))
+print(sequence_iterative(2))
+print(sequence_iterative(3))
+print(sequence_iterative(5))
+print(sequence_iterative(10))
 ````
 # Описание проделанной работы:
 1. Функция принимает целое число i — номер искомого члена последовательности.

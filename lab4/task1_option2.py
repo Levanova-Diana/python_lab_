@@ -1,4 +1,4 @@
-def unpuck_interative(data):
+def unpack_iterative(data):
     result = []
     stack = [data]
     while stack:
@@ -15,4 +15,4 @@ def unpuck_interative(data):
             result.append(current)
     return list(result)
 data = [None, [1, ({2, 3}, {'foo': 'bar'})]]
-print(unpuck_interative(data))
+print(unpack_iterative(data))
