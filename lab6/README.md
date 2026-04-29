@@ -19,7 +19,7 @@ def sieve_of_eratosthenes(limit):
         p += 1
     primes = [num for num, prime in enumerate(is_prime) if prime]
     return primes
-def gererate_primes(start, end):
+def generate_primes(start, end):
     if start < 2:
         start = 2
     if end < start:
@@ -38,7 +38,7 @@ def main():
     if start > end:
         print(f'Ошибка: Нижняя граница ({start}) не может быть больше верхней ({end}).')
         sys.exit(1)
-    primes = gererate_primes(start, end)
+    primes = generate_primes(start, end)
     if not primes:
         print(f'Простых чисел в диапазоне [{start}, {end}] не найдено.')
     else:
